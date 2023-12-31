@@ -19,5 +19,11 @@
         "parameters" : {
             "mobile" : "Replace phonenumber here"
         }
+    },
+    "sheypoor" : {         
+        "url" : "https://www.sheypoor.com/api/v10.0.0/auth/send",         
+        "parameters" : {             
+            "username" : "Replace phonenumber here"         
+        }     
     }
 }
