@@ -1,8 +1,13 @@
 {
     "divar" : {
+        "method" : "post" ,
         "url" : "https://api.divar.ir/v5/auth/authenticate",
         "parameters" : {
             "phone" : "Replace phonenumber here"
         }
+    },
+    "trob" : {
+        "method" : "get" ,
+        "url" : "https://api.torob.com/v4/user/phone/send-pin/?phone_number=Replace phonenumber here"
     }
 }
