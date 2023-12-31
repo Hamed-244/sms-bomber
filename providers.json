@@ -13,5 +13,11 @@
             "otp_call":false,
             "force_send_otp":true
         }
+    },
+    "basalam" : {
+        "url" : "https://auth.basalam.com/otp-request",
+        "parameters" : {
+            "mobile" : "Replace phonenumber here"
+        }
     }
 }
