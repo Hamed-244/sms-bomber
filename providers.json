@@ -19,5 +19,25 @@
             "otp_call":false,
             "force_send_otp":true
         }
-   }
+   },
+    "basalam" : {
+        "url" : "https://auth.basalam.com/otp-request",
+        "parameters" : {
+            "mobile" : "Replace phonenumber here"
+        }
+    },
+    "sheypoor" : {         
+        "url" : "https://www.sheypoor.com/api/v10.0.0/auth/send",         
+        "parameters" : {             
+            "username" : "Replace phonenumber here"         
+        }     
+    },
+    "faradars" : {
+        "url" : "https://api.faradars.org/api/client/v1/auth/otp",
+        "parameters" : {
+            "digits" : 5,
+            "mobile" : "Replace phonenumber here",
+            "platforms" : "web"
+        }
+    }
 }
