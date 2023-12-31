@@ -19,5 +19,19 @@
             "otp_call":false,
             "force_send_otp":true
         }
-   }
+   },
+    "basalam" : {
+        "method" : "post",
+        "url" : "https://auth.basalam.com/otp-request",
+        "parameters" : {
+            "mobile" : "Replace phonenumber here"
+        }
+    },
+    "sheypoor" : {
+        "method" : "post",
+        "url" : "https://www.sheypoor.com/api/v10.0.0/auth/send",         
+        "parameters" : {
+            "username" : "Replace phonenumber here"         
+        }     
+    }
 }
