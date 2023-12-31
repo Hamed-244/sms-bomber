@@ -1,0 +1,8 @@
+{
+    "divar" : {
+        "url" : "https://api.divar.ir/v5/auth/authenticate",
+        "parameters" : {
+            "phone" : "Replace phonenumber here"
+        }
+    }
+}
