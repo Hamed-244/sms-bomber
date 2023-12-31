@@ -33,5 +33,65 @@
         "parameters" : {
             "username" : "Replace phonenumber here"         
         }     
+    },
+    "samaneahan" : {
+        "method" : "post",
+        "url" : "https://api.samaneahan.com/api/v3/otp",
+        "parameters" : {
+            "mobile" : "Replace phonenumber here"
+        }
+    },
+    "taaghche" : {
+        "method" : "post",
+        "url" : "https://gw.taaghche.com/v4/site/auth/signup",
+        "parameters" : {
+            "contact" : "Replace phonenumber here"
+        }
+    },
+    "ponisha" : {
+        "method" : "post",
+        "url" : "https://ponisha.ir/send-mobile-verfication",
+        "parameters" : {
+            "mobile" : "Replace phonenumber here",
+            "type" : "1"
+        }
+    },
+    "logonomy" : {
+        "method" : "post",
+        "url" : "https://newapi.logonomy.ir/auth/OtpLoginStep1",
+        "parameters" : {
+            "mobile" : "Replace phonenumber here"
+        }
+    },
+    "fidibo" : {
+        "method" : "post",
+        "url" : "https://api.fidibo.com/identity/login/prepare",
+        "parameters" : {
+            "username" : "Replace phonenumber here"
+        }
+    },
+    "shahrfarsh" : {
+        "method" : "post",
+        "url" : "https://shahrfarsh.com/Account/Login",
+        "parameters" : {
+            "phoneNumber" : "Replace phonenumber here"
+        }
+    },
+    "technolife" : {
+        "method" : "post",
+        "url" : "https://www.technolife.ir/shop_customer",
+        "parameters" : {
+            "query":"query check_customer_exists ($username: String, $repeat: Boolean) { check_customer_exists (username: $username, repeat: $repeat) { result request_id } }",
+            "variables":{"username":"Replace phonenumber here"},
+            "operationName":"check_customer_exists"
+        }
+    },
+    "hiss" : {
+        "method" : "post",
+        "url" : "https://hiss.ir/wp-admin/admin-ajax.php",
+        "parameters" : {
+            "action" : "bakala_send_code",
+            "phone_email" : "Replace phonenumber here"
+        }
     }
 }
