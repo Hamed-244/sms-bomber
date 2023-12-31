@@ -1,9 +1,14 @@
 {
     "divar" : {
+        "method" : "post" ,
         "url" : "https://api.divar.ir/v5/auth/authenticate",
         "parameters" : {
             "phone" : "Replace phonenumber here"
         }
+    },
+    "trob" : {
+        "method" : "get" ,
+        "url" : "https://api.torob.com/v4/user/phone/send-pin/?phone_number=Replace phonenumber here"
     },
     "digikala" : {
         "url" : "https://api.digikala.com/v1/user/authenticate/",
@@ -12,6 +17,5 @@
             "username":"Replace phonenumber here",
             "otp_call":false,
             "force_send_otp":true
-        }
-    }
+   }
 }

