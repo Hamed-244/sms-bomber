@@ -1,11 +1,17 @@
 {
     "divar" : {
+        "method" : "post" ,
         "url" : "https://api.divar.ir/v5/auth/authenticate",
         "parameters" : {
             "phone" : "Replace phonenumber here"
         }
     },
+    "trob" : {
+        "method" : "get" ,
+        "url" : "https://api.torob.com/v4/user/phone/send-pin/?phone_number=Replace phonenumber here"
+    },
     "digikala" : {
+        "method" : "post",
         "url" : "https://api.digikala.com/v1/user/authenticate/",
         "parameters" : {
             "backUrl":"/",
@@ -13,7 +19,7 @@
             "otp_call":false,
             "force_send_otp":true
         }
-    },
+   },
     "basalam" : {
         "url" : "https://auth.basalam.com/otp-request",
         "parameters" : {
