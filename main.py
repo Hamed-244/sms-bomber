@@ -21,7 +21,7 @@ def send_message(phone, provider_name, provider_info = {} ) :
             if response.status_code == 200 :
                 print(f"{provider_name} => Successful ;")
             else :
-                print(f"{provider_name} => Failed ;")
+                print(f"{provider_name} => Failed ; error : {response.content}")
         except Exception as error :
             print(f"{provider_name} => {error} ;")
 
