@@ -21,23 +21,17 @@
         }
    },
     "basalam" : {
+        "method" : "post",
         "url" : "https://auth.basalam.com/otp-request",
         "parameters" : {
             "mobile" : "Replace phonenumber here"
         }
     },
-    "sheypoor" : {         
+    "sheypoor" : {
+        "method" : "post",
         "url" : "https://www.sheypoor.com/api/v10.0.0/auth/send",         
-        "parameters" : {             
+        "parameters" : {
             "username" : "Replace phonenumber here"         
         }     
-    },
-    "faradars" : {
-        "url" : "https://api.faradars.org/api/client/v1/auth/otp",
-        "parameters" : {
-            "digits" : 5,
-            "mobile" : "Replace phonenumber here",
-            "platforms" : "web"
-        }
     }
 }
