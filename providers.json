@@ -93,5 +93,12 @@
             "action" : "bakala_send_code",
             "phone_email" : "Replace phonenumber here"
         }
+    },
+    "quera" : {
+        "method" : "post",
+        "url" : "https://quera.org/accounts/phone_number_update/otp/request",
+        "parameters" : {
+            "phone_number" : "Replace phonenumber here"
+        }
     }
 }
