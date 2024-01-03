@@ -93,5 +93,48 @@
             "action" : "bakala_send_code",
             "phone_email" : "Replace phonenumber here"
         }
+    },
+    "poolticket" : {
+        "method" : "post",
+        "url" : "https://www.poolticket.org/login/check-register",
+        "parameters" : {
+            "mobile":"Replace phonenumber here",
+            "approve_send_type":"sms"
+        }
+    },
+    "refahmarket" : {
+        "method" : "post",
+        "url" : "https://refahmarket.ir/api/Account/otp-request",
+        "parameters" : {
+            "phoneNumber" : "Replace phonenumber here"
+        }
+    },
+    "okala" : {
+        "method" : "post",
+        "url" : "https://apigateway.okala.com/api/voyager/C/CustomerAccount/OTPRegister",
+        "parameters" : {
+            "mobile":"Replace phonenumber here",
+            "confirmTerms":true,
+            "notRobot":false
+        }
+    },
+    "janbazan" : {
+        "method" : "post",
+        "url" : "http://janbazan-store.com/api/v1/user/login",
+        "parameters" : {
+            "mobile":"Replace phonenumber here"
+        }
+    },
+    "etka" : {
+        "method" : "post",
+        "url" : "https://etka-stores.imtmc.co/login/get/otp",
+        "parameters" : {
+            "login":"Replace phonenumber here"
+        }
+    },
+    "snap-market" : {
+        "method" : "post",
+        "url" : "https://api.snapp.market/mart/v1/user/loginMobileWithNoPass?cellphone=Replace phonenumber here",
+        "parameters" : {}
     }
 }
