@@ -165,5 +165,12 @@
             "mobile": "Replace phonenumber here",
             "from_meter_buy" : false
         }
+    },
+    "jabama" : {
+        "method" : "post",
+        "url" : "https://gw.jabama.com/api/v4/account/send-code",
+        "parameters" : {
+            "mobile": "Replace phonenumber here"
+        }
     }
 }
