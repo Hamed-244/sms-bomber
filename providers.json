@@ -202,5 +202,14 @@
         "parameters" : {
             "mobile": "Replace phonenumber here"
         }
+    },
+    "nobat.ir" : {
+        "method" : "post",
+        "url" : "https://nobat.ir/api/public/patient/login/phone",
+        "parameters" : {
+            "mobile­": "Replace phonenumber here",
+            "domain" : "nobat",
+            "use_emta_v2" : "yes"
+        }
     }
 }
