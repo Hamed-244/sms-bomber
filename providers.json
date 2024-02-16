@@ -172,5 +172,12 @@
         "parameters" : {
             "mobile": "Replace phonenumber here"
         }
+    },
+    "digikalajet" : {
+        "method" : "post",
+        "url" : "https://api.digikalajet.ir/user/login-register/",
+        "parameters" : {
+            "phone": "Replace phonenumber here"
+        }
     }
 }
