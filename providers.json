@@ -195,5 +195,12 @@
             "mobile": "Replace phonenumber here",
             "key": "U2FsdGVkX19bJbM+JrB9j1QJ3nFLi/UYvFnteb5ZuAh/SEH5GhjbfwtQmnnT2/yXP3ouR8be8GErna9+679SPA=="
         }
+    },
+    "vandar" : {
+        "method" : "post",
+        "url" : "https://api.vandar.io/account/v1/check/mobile",
+        "parameters" : {
+            "mobile": "Replace phonenumber here"
+        }
     }
 }
