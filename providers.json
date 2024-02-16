@@ -227,5 +227,12 @@
             "uuid": true,
             "phone": "Replace phonenumber here"
         }
+    },
+    "tetherland" : {
+        "method" : "post",
+        "url" : "https://service.tetherland.com/api/v5/login-register",
+        "parameters" : {
+            "mobile": "Replace phonenumber here"
+        }
     }
 }
