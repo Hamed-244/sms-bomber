@@ -211,5 +211,21 @@
             "domain" : "nobat",
             "use_emta_v2" : "yes"
         }
+    },
+    "alopeyk" : {
+        "method" : "post",
+        "url" : "https://api.alopeyk.com/api/v2/login?platform=pwa",
+        "parameters" : {
+            "type": "CUSTOMER",
+            "model": "Chrome 121.0.0.0",
+            "platform": "pwa",
+            "version": "10",
+            "manufacturer": "Windows",
+            "isVirtual": false,
+            "serial": true,
+            "app_version": "1.6.3",
+            "uuid": true,
+            "phone": "Replace phonenumber here"
+        }
     }
 }
