@@ -157,5 +157,13 @@
         "parameters" : {
             "phoneNumber": "Replace phonenumber here"
         }
+    },
+    "bargheman" : {
+        "method" : "post",
+        "url" : "https://uiapi2.saapa.ir/api/otp/sendCode",
+        "parameters" : {
+            "mobile": "Replace phonenumber here",
+            "from_meter_buy" : false
+        }
     }
 }
