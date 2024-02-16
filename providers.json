@@ -143,5 +143,12 @@
         "parameters" : {
             "mobile": "Replace phonenumber here"
         }
+    },
+    "komodaa" : {
+        "method" : "post",
+        "url" : "https://api.komodaa.com/api/v2.6/loginRC/request",
+        "parameters" : {
+            "phone_number": "Replace phonenumber here"
+        }
     }
 }
