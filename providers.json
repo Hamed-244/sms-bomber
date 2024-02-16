@@ -179,5 +179,12 @@
         "parameters" : {
             "phone": "Replace phonenumber here"
         }
+    },
+    "azki" : {
+        "method" : "post",
+        "url" : "https://www.azki.co/api/vehicleorder/v2/app/auth/check-login-availability/",
+        "parameters" : {
+            "phoneNumber": "Replace phonenumber here"
+        }
     }
 }
