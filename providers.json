@@ -186,5 +186,14 @@
         "parameters" : {
             "phoneNumber": "Replace phonenumber here"
         }
+    },
+    "drnext" : {
+        "method" : "post",
+        "url" : "https://cyclops.drnext.ir/v1/patients/auth/send-verification-token",
+        "parameters" : {
+            "source": "besina",
+            "mobile": "Replace phonenumber here",
+            "key": "U2FsdGVkX19bJbM+JrB9j1QJ3nFLi/UYvFnteb5ZuAh/SEH5GhjbfwtQmnnT2/yXP3ouR8be8GErna9+679SPA=="
+        }
     }
 }
