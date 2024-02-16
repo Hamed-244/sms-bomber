@@ -19,7 +19,7 @@
             "otp_call":false,
             "force_send_otp":true
         }
-   },
+    },
     "basalam" : {
         "method" : "post",
         "url" : "https://auth.basalam.com/otp-request",
@@ -136,5 +136,103 @@
         "method" : "post",
         "url" : "https://api.snapp.market/mart/v1/user/loginMobileWithNoPass?cellphone=Replace phonenumber here",
         "parameters" : {}
+    },
+    "daapapp" : {
+        "method" : "post",
+        "url" : "https://api.daapapp.com/api/v2/client/otp/sms/send",
+        "parameters" : {
+            "mobile": "Replace phonenumber here"
+        }
+    },
+    "komodaa" : {
+        "method" : "post",
+        "url" : "https://api.komodaa.com/api/v2.6/loginRC/request",
+        "parameters" : {
+            "phone_number": "Replace phonenumber here"
+        }
+    },
+    "alibaba" : {
+        "method" : "post",
+        "url" : "https://ws.alibaba.ir/api/v3/account/mobile/otp",
+        "parameters" : {
+            "phoneNumber": "Replace phonenumber here"
+        }
+    },
+    "bargheman" : {
+        "method" : "post",
+        "url" : "https://uiapi2.saapa.ir/api/otp/sendCode",
+        "parameters" : {
+            "mobile": "Replace phonenumber here",
+            "from_meter_buy" : false
+        }
+    },
+    "jabama" : {
+        "method" : "post",
+        "url" : "https://gw.jabama.com/api/v4/account/send-code",
+        "parameters" : {
+            "mobile": "Replace phonenumber here"
+        }
+    },
+    "digikalajet" : {
+        "method" : "post",
+        "url" : "https://api.digikalajet.ir/user/login-register/",
+        "parameters" : {
+            "phone": "Replace phonenumber here"
+        }
+    },
+    "azki" : {
+        "method" : "post",
+        "url" : "https://www.azki.co/api/vehicleorder/v2/app/auth/check-login-availability/",
+        "parameters" : {
+            "phoneNumber": "Replace phonenumber here"
+        }
+    },
+    "drnext" : {
+        "method" : "post",
+        "url" : "https://cyclops.drnext.ir/v1/patients/auth/send-verification-token",
+        "parameters" : {
+            "source": "besina",
+            "mobile": "Replace phonenumber here",
+            "key": "U2FsdGVkX19bJbM+JrB9j1QJ3nFLi/UYvFnteb5ZuAh/SEH5GhjbfwtQmnnT2/yXP3ouR8be8GErna9+679SPA=="
+        }
+    },
+    "vandar" : {
+        "method" : "post",
+        "url" : "https://api.vandar.io/account/v1/check/mobile",
+        "parameters" : {
+            "mobile": "Replace phonenumber here"
+        }
+    },
+    "nobat.ir" : {
+        "method" : "post",
+        "url" : "https://nobat.ir/api/public/patient/login/phone",
+        "parameters" : {
+            "mobile­": "Replace phonenumber here",
+            "domain" : "nobat",
+            "use_emta_v2" : "yes"
+        }
+    },
+    "alopeyk" : {
+        "method" : "post",
+        "url" : "https://api.alopeyk.com/api/v2/login?platform=pwa",
+        "parameters" : {
+            "type": "CUSTOMER",
+            "model": "Chrome 121.0.0.0",
+            "platform": "pwa",
+            "version": "10",
+            "manufacturer": "Windows",
+            "isVirtual": false,
+            "serial": true,
+            "app_version": "1.6.3",
+            "uuid": true,
+            "phone": "Replace phonenumber here"
+        }
+    },
+    "tetherland" : {
+        "method" : "post",
+        "url" : "https://service.tetherland.com/api/v5/login-register",
+        "parameters" : {
+            "mobile": "Replace phonenumber here"
+        }
     }
 }
